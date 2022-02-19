@@ -15,13 +15,12 @@ const Component: VFCX<Props> = ({ className }) => (
 );
 
 const StyledComponent = styled(Component)`
-  background-color: #fff;
+  border-right: 1px solid #0000000a;
   > div {
     min-height: 100vh;
     position: sticky;
     top: 0;
     padding: 1em;
-    box-shadow: 10px 0 20px -10px #0002;
   }
 `;
 

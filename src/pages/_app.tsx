@@ -1,7 +1,6 @@
 import type { AppProps } from 'next/app';
 import 'sanitize.css';
-
-import Layout from 'components/layout';
+import Layout from 'src/components/layout';
 
 const App = ({ Component, pageProps }: AppProps) => (
   <Layout>

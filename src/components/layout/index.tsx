@@ -2,11 +2,16 @@ import styled from '@emotion/styled';
 import { FCX } from 'react';
 import Sidebar from './sidebar';
 
+import GlobalStyle from './global-style';
+
 const Component: FCX = ({ children, className }) => (
-  <div {...{ className }}>
-    <Sidebar />
-    <main>{children}</main>
-  </div>
+  <>
+    <GlobalStyle />
+    <div {...{ className }}>
+      <Sidebar />
+      <main>{children}</main>
+    </div>
+  </>
 );
 
 const StyledComponent = styled(Component)`
